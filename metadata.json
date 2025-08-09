@@ -1,0 +1,7 @@
+{
+  "name": "Detector de Colores IA",
+  "description": "Una aplicación web progresiva para ayudar a personas con daltonismo a identificar colores en tiempo real usando la cámara del dispositivo y la IA de Gemini.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
