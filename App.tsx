@@ -63,7 +63,8 @@ export default function App(): React.ReactNode {
         setColorResult(result);
       } catch (err) {
         console.error(err);
-        setError("No se pudo identificar el color. Inténtalo de nuevo.");
+        const errorMessage = err instanceof Error ? err.message : "Ocurrió un error desconocido.";
+        setError(errorMessage);
       }
     } else {
         setError("No se pudo procesar la imagen de la cámara.");
