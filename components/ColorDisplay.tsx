@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { type ColorResult } from '../types';
 
@@ -20,16 +19,3 @@ export function ColorDisplay({ result }: ColorDisplayProps): React.ReactNode {
     </div>
   );
 }
-
-// Add keyframes for animation in a style tag if not using a CSS file
-const style = document.createElement('style');
-style.innerHTML = `
-@keyframes fade-in {
-    0% { opacity: 0; transform: scale(0.95); }
-    100% { opacity: 1; transform: scale(1); }
-}
-.animate-fade-in {
-    animation: fade-in 0.5s ease-out forwards;
-}
-`;
-document.head.appendChild(style);
